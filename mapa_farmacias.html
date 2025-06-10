@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc52ae1ad56e3fe58cc35952f48d81e2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc52ae1ad56e3fe58cc35952f48d81e2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc52ae1ad56e3fe58cc35952f48d81e2 = L.map(
+                "map_bc52ae1ad56e3fe58cc35952f48d81e2",
+                {
+                    center: [-37.32119039355543, -59.13256402301502],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c19bc0f237816e34e988700bdc474c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4c19bc0f237816e34e988700bdc474c7.addTo(map_bc52ae1ad56e3fe58cc35952f48d81e2);
+        
+    
+
+        function geo_json_c77e70416fb2980a217d3c4d9ae1a41a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c77e70416fb2980a217d3c4d9ae1a41a = L.geoJson(null, {
+                onEachFeature: geo_json_c77e70416fb2980a217d3c4d9ae1a41a_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_c77e70416fb2980a217d3c4d9ae1a41a_add (data) {
+            geo_json_c77e70416fb2980a217d3c4d9ae1a41a
+                .addData(data);
+        }
+            geo_json_c77e70416fb2980a217d3c4d9ae1a41a_add({"bbox": [-59.15873185212598, -37.33574730910901, -59.107669000000094, -37.30110400000023], "features": [{"bbox": [-59.107669000000094, -37.32131400000027, -59.107669000000094, -37.32131400000027], "geometry": {"coordinates": [-59.107669000000094, -37.32131400000027], "type": "Point"}, "id": "0", "properties": {"direccion": "Av. Falucho 1182", "nombre": "Del Lago"}, "type": "Feature"}, {"bbox": [-59.13577190484656, -37.325948914663904, -59.13577190484656, -37.325948914663904], "geometry": {"coordinates": [-59.13577190484656, -37.325948914663904], "type": "Point"}, "id": "1", "properties": {"direccion": "San Mart\u00edn 668", "nombre": "Del Pueblo"}, "type": "Feature"}, {"bbox": [-59.12631500000008, -37.32549300000025, -59.12631500000008, -37.32549300000025], "geometry": {"coordinates": [-59.12631500000008, -37.32549300000025], "type": "Point"}, "id": "2", "properties": {"direccion": "Belgrano y Alsina", "nombre": "Florit"}, "type": "Feature"}, {"bbox": [-59.11058264872761, -37.33369616541614, -59.11058264872761, -37.33369616541614], "geometry": {"coordinates": [-59.11058264872761, -37.33369616541614], "type": "Point"}, "id": "3", "properties": {"direccion": "Av. Brasil 585", "nombre": "P\u00e9rez"}, "type": "Feature"}, {"bbox": [-59.13219942873473, -37.33574730910901, -59.13219942873473, -37.33574730910901], "geometry": {"coordinates": [-59.13219942873473, -37.33574730910901], "type": "Point"}, "id": "4", "properties": {"direccion": "Av. Alvear 147", "nombre": "Raggio"}, "type": "Feature"}, {"bbox": [-59.134525830000044, -37.32415619000022, -59.134525830000044, -37.32415619000022], "geometry": {"coordinates": [-59.134525830000044, -37.32415619000022], "type": "Point"}, "id": "5", "properties": {"direccion": "Sarmiento 797", "nombre": "Roma"}, "type": "Feature"}, {"bbox": [-59.15873185212598, -37.309361051929685, -59.15873185212598, -37.309361051929685], "geometry": {"coordinates": [-59.15873185212598, -37.309361051929685], "type": "Point"}, "id": "6", "properties": {"direccion": "Av. Lunghi 1191", "nombre": "Romero"}, "type": "Feature"}, {"bbox": [-59.136990180000026, -37.322813790000275, -59.136990180000026, -37.322813790000275], "geometry": {"coordinates": [-59.136990180000026, -37.322813790000275], "type": "Point"}, "id": "7", "properties": {"direccion": "9 de julio 853", "nombre": "Roveda"}, "type": "Feature"}, {"bbox": [-59.13714225439235, -37.33098855059645, -59.13714225439235, -37.33098855059645], "geometry": {"coordinates": [-59.13714225439235, -37.33098855059645], "type": "Point"}, "id": "8", "properties": {"direccion": "Chacabuco 302", "nombre": "Rubbi"}, "type": "Feature"}, {"bbox": [-59.14316033120623, -37.30210850063716, -59.14316033120623, -37.30210850063716], "geometry": {"coordinates": [-59.14316033120623, -37.30210850063716], "type": "Point"}, "id": "9", "properties": {"direccion": "Lavalle 670", "nombre": "Strada"}, "type": "Feature"}, {"bbox": [-59.1451431204585, -37.325059796995575, -59.1451431204585, -37.325059796995575], "geometry": {"coordinates": [-59.1451431204585, -37.325059796995575], "type": "Point"}, "id": "10", "properties": {"direccion": "Av. Espa\u00f1a 146", "nombre": "Aranguren"}, "type": "Feature"}, {"bbox": [-59.12648800000008, -37.33137000000021, -59.12648800000008, -37.33137000000021], "geometry": {"coordinates": [-59.12648800000008, -37.33137000000021], "type": "Point"}, "id": "11", "properties": {"direccion": "Av. Avellaneda 998", "nombre": "Avellaneda"}, "type": "Feature"}, {"bbox": [-59.13026492000006, -37.32505399000028, -59.13026492000006, -37.32505399000028], "geometry": {"coordinates": [-59.13026492000006, -37.32505399000028], "type": "Point"}, "id": "12", "properties": {"direccion": "Av. Santamarina 512", "nombre": "Avenida"}, "type": "Feature"}, {"bbox": [-59.148696000000044, -37.309979000000254, -59.148696000000044, -37.309979000000254], "geometry": {"coordinates": [-59.148696000000044, -37.309979000000254], "type": "Point"}, "id": "13", "properties": {"direccion": "Figueroa 719", "nombre": "Berlari"}, "type": "Feature"}, {"bbox": [-59.11339400000008, -37.328917000000274, -59.11339400000008, -37.328917000000274], "geometry": {"coordinates": [-59.11339400000008, -37.328917000000274], "type": "Point"}, "id": "14", "properties": {"direccion": "Av. Brasil 165", "nombre": "Brasil"}, "type": "Feature"}, {"bbox": [-59.12065690000003, -37.31640140000028, -59.12065690000003, -37.31640140000028], "geometry": {"coordinates": [-59.12065690000003, -37.31640140000028], "type": "Point"}, "id": "15", "properties": {"direccion": "Av. Buz\u00f3n 1057", "nombre": "Bufor"}, "type": "Feature"}, {"bbox": [-59.13537388000008, -37.3285265300002, -59.13537388000008, -37.3285265300002], "geometry": {"coordinates": [-59.13537388000008, -37.3285265300002], "type": "Point"}, "id": "16", "properties": {"direccion": "Gral. Rodr\u00edguez 423", "nombre": "Central"}, "type": "Feature"}, {"bbox": [-59.14331089721698, -37.30688424939559, -59.14331089721698, -37.30688424939559], "geometry": {"coordinates": [-59.14331089721698, -37.30688424939559], "type": "Point"}, "id": "17", "properties": {"direccion": "Quintana 620", "nombre": "Cicala"}, "type": "Feature"}, {"bbox": [-59.13493545000008, -37.31683013000021, -59.13493545000008, -37.31683013000021], "geometry": {"coordinates": [-59.13493545000008, -37.31683013000021], "type": "Point"}, "id": "18", "properties": {"direccion": "Av. Col\u00f3n 1201", "nombre": "Col\u00f3n"}, "type": "Feature"}, {"bbox": [-59.11774500000009, -37.32154400000029, -59.11774500000009, -37.32154400000029], "geometry": {"coordinates": [-59.11774500000009, -37.32154400000029], "type": "Point"}, "id": "19", "properties": {"direccion": "Av. Buz\u00f3n 542", "nombre": "De la Ciudad"}, "type": "Feature"}, {"bbox": [-59.123057, -37.30110400000023, -59.123057, -37.30110400000023], "geometry": {"coordinates": [-59.123057, -37.30110400000023], "type": "Point"}, "id": "20", "properties": {"direccion": "Darragueira 1970", "nombre": "De la Sierra"}, "type": "Feature"}, {"bbox": [-59.137089020116754, -37.325538854850876, -59.137089020116754, -37.325538854850876], "geometry": {"coordinates": [-59.137089020116754, -37.325538854850876], "type": "Point"}, "id": "21", "properties": {"direccion": "Gral. Rodr\u00edguez 667", "nombre": "Del Centro"}, "type": "Feature"}, {"bbox": [-59.12979485000011, -37.31939900000021, -59.12979485000011, -37.31939900000021], "geometry": {"coordinates": [-59.12979485000011, -37.31939900000021], "type": "Point"}, "id": "22", "properties": {"direccion": "Av. Marconi 1201", "nombre": "Marzocca"}, "type": "Feature"}, {"bbox": [-59.13932061000001, -37.310045600000194, -59.13932061000001, -37.310045600000194], "geometry": {"coordinates": [-59.13932061000001, -37.310045600000194], "type": "Point"}, "id": "23", "properties": {"direccion": "Quintana 303", "nombre": "Novafarma"}, "type": "Feature"}, {"bbox": [-59.15045782000005, -37.31549480000029, -59.15045782000005, -37.31549480000029], "geometry": {"coordinates": [-59.15045782000005, -37.31549480000029], "type": "Point"}, "id": "24", "properties": {"direccion": "Av. Del Valle 174", "nombre": "Pedemonte"}, "type": "Feature"}, {"bbox": [-59.14127583722625, -37.318705609743816, -59.14127583722625, -37.318705609743816], "geometry": {"coordinates": [-59.14127583722625, -37.318705609743816], "type": "Point"}, "id": "25", "properties": {"direccion": "Gral. Rodr\u00edguez 1244", "nombre": "Quaranta"}, "type": "Feature"}, {"bbox": [-59.13876719000006, -37.32266713000028, -59.13876719000006, -37.32266713000028], "geometry": {"coordinates": [-59.13876719000006, -37.32266713000028], "type": "Point"}, "id": "26", "properties": {"direccion": "Rodriguez y Av.Espa\u00f1a", "nombre": "Suiza"}, "type": "Feature"}, {"bbox": [-59.110319670000095, -37.30873007000024, -59.110319670000095, -37.30873007000024], "geometry": {"coordinates": [-59.110319670000095, -37.30873007000024], "type": "Point"}, "id": "27", "properties": {"direccion": "Av. Actis 1738", "nombre": "S\u00e1nchez"}, "type": "Feature"}, {"bbox": [-59.13437791000009, -37.32721539000021, -59.13437791000009, -37.32721539000021], "geometry": {"coordinates": [-59.13437791000009, -37.32721539000021], "type": "Point"}, "id": "28", "properties": {"direccion": "9 de julio 493", "nombre": "Tandil"}, "type": "Feature"}, {"bbox": [-59.14934080775523, -37.322448022925386, -59.14934080775523, -37.322448022925386], "geometry": {"coordinates": [-59.14934080775523, -37.322448022925386], "type": "Point"}, "id": "29", "properties": {"direccion": "Av. Pte Per\u00f3n 1198", "nombre": "Teren"}, "type": "Feature"}, {"bbox": [-59.12434103951894, -37.33505696573325, -59.12434103951894, -37.33505696573325], "geometry": {"coordinates": [-59.12434103951894, -37.33505696573325], "type": "Point"}, "id": "30", "properties": {"direccion": "Av. Sim\u00f3n Bol\u00edvar 301", "nombre": "Traverso"}, "type": "Feature"}, {"bbox": [-59.133684451615814, -37.32072885607594, -59.133684451615814, -37.32072885607594], "geometry": {"coordinates": [-59.133684451615814, -37.32072885607594], "type": "Point"}, "id": "31", "properties": {"direccion": "Av. Espa\u00f1a 958", "nombre": "Vera"}, "type": "Feature"}, {"bbox": [-59.11268258440407, -37.32560391007447, -59.11268258440407, -37.32560391007447], "geometry": {"coordinates": [-59.11268258440407, -37.32560391007447], "type": "Point"}, "id": "32", "properties": {"direccion": "Av. Falucho 701", "nombre": "Subelza"}, "type": "Feature"}, {"bbox": [-59.1335206492387, -37.322804460509175, -59.1335206492387, -37.322804460509175], "geometry": {"coordinates": [-59.1335206492387, -37.322804460509175], "type": "Point"}, "id": "33", "properties": {"direccion": "Gral. Paz 764", "nombre": "Vasca"}, "type": "Feature"}, {"bbox": [-59.14271388000002, -37.31620406000025, -59.14271388000002, -37.31620406000025], "geometry": {"coordinates": [-59.14271388000002, -37.31620406000025], "type": "Point"}, "id": "34", "properties": {"direccion": "Gral. Rodr\u00edguez 1491", "nombre": "Galli"}, "type": "Feature"}, {"bbox": [-59.11906561000002, -37.32848520000029, -59.11906561000002, -37.32848520000029], "geometry": {"coordinates": [-59.11906561000002, -37.32848520000029], "type": "Point"}, "id": "35", "properties": {"direccion": "Av. Avellaneda 1498", "nombre": "Garbellini"}, "type": "Feature"}, {"bbox": [-59.13612554000005, -37.332390390000256, -59.13612554000005, -37.332390390000256], "geometry": {"coordinates": [-59.13612554000005, -37.332390390000256], "type": "Point"}, "id": "36", "properties": {"direccion": "Chacabuco 181", "nombre": "Heer"}, "type": "Feature"}, {"bbox": [-59.13597683000002, -37.31506146000024, -59.13597683000002, -37.31506146000024], "geometry": {"coordinates": [-59.13597683000002, -37.31506146000024], "type": "Point"}, "id": "37", "properties": {"direccion": "Av. Col\u00f3n 1359", "nombre": "La Mutual"}, "type": "Feature"}, {"bbox": [-59.138989000000024, -37.3165480000002, -59.138989000000024, -37.3165480000002], "geometry": {"coordinates": [-59.138989000000024, -37.3165480000002], "type": "Point"}, "id": "38", "properties": {"direccion": "Alem 1334", "nombre": "Lucchetti"}, "type": "Feature"}, {"bbox": [-59.107669000000094, -37.32131400000027, -59.107669000000094, -37.32131400000027], "geometry": {"coordinates": [-59.107669000000094, -37.32131400000027], "type": "Point"}, "id": "39", "properties": {"direccion": "Av. Falucho 1182", "nombre": "Del Lago"}, "type": "Feature"}, {"bbox": [-59.13577190484656, -37.325948914663904, -59.13577190484656, -37.325948914663904], "geometry": {"coordinates": [-59.13577190484656, -37.325948914663904], "type": "Point"}, "id": "40", "properties": {"direccion": "San Mart\u00edn 668", "nombre": "Del Pueblo"}, "type": "Feature"}, {"bbox": [-59.12631500000008, -37.32549300000025, -59.12631500000008, -37.32549300000025], "geometry": {"coordinates": [-59.12631500000008, -37.32549300000025], "type": "Point"}, "id": "41", "properties": {"direccion": "Belgrano y Alsina", "nombre": "Florit"}, "type": "Feature"}, {"bbox": [-59.11058264872761, -37.33369616541614, -59.11058264872761, -37.33369616541614], "geometry": {"coordinates": [-59.11058264872761, -37.33369616541614], "type": "Point"}, "id": "42", "properties": {"direccion": "Av. Brasil 585", "nombre": "P\u00e9rez"}, "type": "Feature"}, {"bbox": [-59.13219942873473, -37.33574730910901, -59.13219942873473, -37.33574730910901], "geometry": {"coordinates": [-59.13219942873473, -37.33574730910901], "type": "Point"}, "id": "43", "properties": {"direccion": "Av. Alvear 147", "nombre": "Raggio"}, "type": "Feature"}, {"bbox": [-59.134525830000044, -37.32415619000022, -59.134525830000044, -37.32415619000022], "geometry": {"coordinates": [-59.134525830000044, -37.32415619000022], "type": "Point"}, "id": "44", "properties": {"direccion": "Sarmiento 797", "nombre": "Roma"}, "type": "Feature"}, {"bbox": [-59.15873185212598, -37.309361051929685, -59.15873185212598, -37.309361051929685], "geometry": {"coordinates": [-59.15873185212598, -37.309361051929685], "type": "Point"}, "id": "45", "properties": {"direccion": "Av. Lunghi 1191", "nombre": "Romero"}, "type": "Feature"}, {"bbox": [-59.136990180000026, -37.322813790000275, -59.136990180000026, -37.322813790000275], "geometry": {"coordinates": [-59.136990180000026, -37.322813790000275], "type": "Point"}, "id": "46", "properties": {"direccion": "9 de julio 853", "nombre": "Roveda"}, "type": "Feature"}, {"bbox": [-59.13714225439235, -37.33098855059645, -59.13714225439235, -37.33098855059645], "geometry": {"coordinates": [-59.13714225439235, -37.33098855059645], "type": "Point"}, "id": "47", "properties": {"direccion": "Chacabuco 302", "nombre": "Rubbi"}, "type": "Feature"}, {"bbox": [-59.14316033120623, -37.30210850063716, -59.14316033120623, -37.30210850063716], "geometry": {"coordinates": [-59.14316033120623, -37.30210850063716], "type": "Point"}, "id": "48", "properties": {"direccion": "Lavalle 670", "nombre": "Strada"}, "type": "Feature"}, {"bbox": [-59.1451431204585, -37.325059796995575, -59.1451431204585, -37.325059796995575], "geometry": {"coordinates": [-59.1451431204585, -37.325059796995575], "type": "Point"}, "id": "49", "properties": {"direccion": "Av. Espa\u00f1a 146", "nombre": "Aranguren"}, "type": "Feature"}, {"bbox": [-59.12648800000008, -37.33137000000021, -59.12648800000008, -37.33137000000021], "geometry": {"coordinates": [-59.12648800000008, -37.33137000000021], "type": "Point"}, "id": "50", "properties": {"direccion": "Av. Avellaneda 998", "nombre": "Avellaneda"}, "type": "Feature"}, {"bbox": [-59.13026492000006, -37.32505399000028, -59.13026492000006, -37.32505399000028], "geometry": {"coordinates": [-59.13026492000006, -37.32505399000028], "type": "Point"}, "id": "51", "properties": {"direccion": "Av. Santamarina 512", "nombre": "Avenida"}, "type": "Feature"}, {"bbox": [-59.148696000000044, -37.309979000000254, -59.148696000000044, -37.309979000000254], "geometry": {"coordinates": [-59.148696000000044, -37.309979000000254], "type": "Point"}, "id": "52", "properties": {"direccion": "Figueroa 719", "nombre": "Berlari"}, "type": "Feature"}, {"bbox": [-59.11339400000008, -37.328917000000274, -59.11339400000008, -37.328917000000274], "geometry": {"coordinates": [-59.11339400000008, -37.328917000000274], "type": "Point"}, "id": "53", "properties": {"direccion": "Av. Brasil 165", "nombre": "Brasil"}, "type": "Feature"}, {"bbox": [-59.12065690000003, -37.31640140000028, -59.12065690000003, -37.31640140000028], "geometry": {"coordinates": [-59.12065690000003, -37.31640140000028], "type": "Point"}, "id": "54", "properties": {"direccion": "Av. Buz\u00f3n 1057", "nombre": "Bufor"}, "type": "Feature"}, {"bbox": [-59.13537388000008, -37.3285265300002, -59.13537388000008, -37.3285265300002], "geometry": {"coordinates": [-59.13537388000008, -37.3285265300002], "type": "Point"}, "id": "55", "properties": {"direccion": "Gral. Rodr\u00edguez 423", "nombre": "Central"}, "type": "Feature"}, {"bbox": [-59.14331089721698, -37.30688424939559, -59.14331089721698, -37.30688424939559], "geometry": {"coordinates": [-59.14331089721698, -37.30688424939559], "type": "Point"}, "id": "56", "properties": {"direccion": "Quintana 620", "nombre": "Cicala"}, "type": "Feature"}, {"bbox": [-59.13493545000008, -37.31683013000021, -59.13493545000008, -37.31683013000021], "geometry": {"coordinates": [-59.13493545000008, -37.31683013000021], "type": "Point"}, "id": "57", "properties": {"direccion": "Av. Col\u00f3n 1201", "nombre": "Col\u00f3n"}, "type": "Feature"}, {"bbox": [-59.11774500000009, -37.32154400000029, -59.11774500000009, -37.32154400000029], "geometry": {"coordinates": [-59.11774500000009, -37.32154400000029], "type": "Point"}, "id": "58", "properties": {"direccion": "Av. Buz\u00f3n 542", "nombre": "De la Ciudad"}, "type": "Feature"}, {"bbox": [-59.123057, -37.30110400000023, -59.123057, -37.30110400000023], "geometry": {"coordinates": [-59.123057, -37.30110400000023], "type": "Point"}, "id": "59", "properties": {"direccion": "Darragueira 1970", "nombre": "De la Sierra"}, "type": "Feature"}, {"bbox": [-59.137089020116754, -37.325538854850876, -59.137089020116754, -37.325538854850876], "geometry": {"coordinates": [-59.137089020116754, -37.325538854850876], "type": "Point"}, "id": "60", "properties": {"direccion": "Gral. Rodr\u00edguez 667", "nombre": "Del Centro"}, "type": "Feature"}, {"bbox": [-59.12979485000011, -37.31939900000021, -59.12979485000011, -37.31939900000021], "geometry": {"coordinates": [-59.12979485000011, -37.31939900000021], "type": "Point"}, "id": "61", "properties": {"direccion": "Av. Marconi 1201", "nombre": "Marzocca"}, "type": "Feature"}, {"bbox": [-59.13932061000001, -37.310045600000194, -59.13932061000001, -37.310045600000194], "geometry": {"coordinates": [-59.13932061000001, -37.310045600000194], "type": "Point"}, "id": "62", "properties": {"direccion": "Quintana 303", "nombre": "Novafarma"}, "type": "Feature"}, {"bbox": [-59.15045782000005, -37.31549480000029, -59.15045782000005, -37.31549480000029], "geometry": {"coordinates": [-59.15045782000005, -37.31549480000029], "type": "Point"}, "id": "63", "properties": {"direccion": "Av. Del Valle 174", "nombre": "Pedemonte"}, "type": "Feature"}, {"bbox": [-59.14127583722625, -37.318705609743816, -59.14127583722625, -37.318705609743816], "geometry": {"coordinates": [-59.14127583722625, -37.318705609743816], "type": "Point"}, "id": "64", "properties": {"direccion": "Gral. Rodr\u00edguez 1244", "nombre": "Quaranta"}, "type": "Feature"}, {"bbox": [-59.13876719000006, -37.32266713000028, -59.13876719000006, -37.32266713000028], "geometry": {"coordinates": [-59.13876719000006, -37.32266713000028], "type": "Point"}, "id": "65", "properties": {"direccion": "Rodriguez y Av.Espa\u00f1a", "nombre": "Suiza"}, "type": "Feature"}, {"bbox": [-59.110319670000095, -37.30873007000024, -59.110319670000095, -37.30873007000024], "geometry": {"coordinates": [-59.110319670000095, -37.30873007000024], "type": "Point"}, "id": "66", "properties": {"direccion": "Av. Actis 1738", "nombre": "S\u00e1nchez"}, "type": "Feature"}, {"bbox": [-59.13437791000009, -37.32721539000021, -59.13437791000009, -37.32721539000021], "geometry": {"coordinates": [-59.13437791000009, -37.32721539000021], "type": "Point"}, "id": "67", "properties": {"direccion": "9 de julio 493", "nombre": "Tandil"}, "type": "Feature"}, {"bbox": [-59.14934080775523, -37.322448022925386, -59.14934080775523, -37.322448022925386], "geometry": {"coordinates": [-59.14934080775523, -37.322448022925386], "type": "Point"}, "id": "68", "properties": {"direccion": "Av. Pte Per\u00f3n 1198", "nombre": "Teren"}, "type": "Feature"}, {"bbox": [-59.12434103951894, -37.33505696573325, -59.12434103951894, -37.33505696573325], "geometry": {"coordinates": [-59.12434103951894, -37.33505696573325], "type": "Point"}, "id": "69", "properties": {"direccion": "Av. Sim\u00f3n Bol\u00edvar 301", "nombre": "Traverso"}, "type": "Feature"}, {"bbox": [-59.133684451615814, -37.32072885607594, -59.133684451615814, -37.32072885607594], "geometry": {"coordinates": [-59.133684451615814, -37.32072885607594], "type": "Point"}, "id": "70", "properties": {"direccion": "Av. Espa\u00f1a 958", "nombre": "Vera"}, "type": "Feature"}, {"bbox": [-59.11268258440407, -37.32560391007447, -59.11268258440407, -37.32560391007447], "geometry": {"coordinates": [-59.11268258440407, -37.32560391007447], "type": "Point"}, "id": "71", "properties": {"direccion": "Av. Falucho 701", "nombre": "Subelza"}, "type": "Feature"}, {"bbox": [-59.1335206492387, -37.322804460509175, -59.1335206492387, -37.322804460509175], "geometry": {"coordinates": [-59.1335206492387, -37.322804460509175], "type": "Point"}, "id": "72", "properties": {"direccion": "Gral. Paz 764", "nombre": "Vasca"}, "type": "Feature"}, {"bbox": [-59.14271388000002, -37.31620406000025, -59.14271388000002, -37.31620406000025], "geometry": {"coordinates": [-59.14271388000002, -37.31620406000025], "type": "Point"}, "id": "73", "properties": {"direccion": "Gral. Rodr\u00edguez 1491", "nombre": "Galli"}, "type": "Feature"}, {"bbox": [-59.11906561000002, -37.32848520000029, -59.11906561000002, -37.32848520000029], "geometry": {"coordinates": [-59.11906561000002, -37.32848520000029], "type": "Point"}, "id": "74", "properties": {"direccion": "Av. Avellaneda 1498", "nombre": "Garbellini"}, "type": "Feature"}, {"bbox": [-59.13612554000005, -37.332390390000256, -59.13612554000005, -37.332390390000256], "geometry": {"coordinates": [-59.13612554000005, -37.332390390000256], "type": "Point"}, "id": "75", "properties": {"direccion": "Chacabuco 181", "nombre": "Heer"}, "type": "Feature"}, {"bbox": [-59.13597683000002, -37.31506146000024, -59.13597683000002, -37.31506146000024], "geometry": {"coordinates": [-59.13597683000002, -37.31506146000024], "type": "Point"}, "id": "76", "properties": {"direccion": "Av. Col\u00f3n 1359", "nombre": "La Mutual"}, "type": "Feature"}, {"bbox": [-59.138989000000024, -37.3165480000002, -59.138989000000024, -37.3165480000002], "geometry": {"coordinates": [-59.138989000000024, -37.3165480000002], "type": "Point"}, "id": "77", "properties": {"direccion": "Alem 1334", "nombre": "Lucchetti"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_c77e70416fb2980a217d3c4d9ae1a41a.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_c77e70416fb2980a217d3c4d9ae1a41a.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["nombre"];
+    let aliases = ["Farmacia"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_c77e70416fb2980a217d3c4d9ae1a41a.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["nombre", "direccion"];
+    let aliases = ["Nombre", "Direcci\u00f3n"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_c77e70416fb2980a217d3c4d9ae1a41a.addTo(map_bc52ae1ad56e3fe58cc35952f48d81e2);
+        
+    
+            var layer_control_8c51cb8ae7af4a8f20348c95eee58f5c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4c19bc0f237816e34e988700bdc474c7,
+                },
+                overlays :  {
+                    "Farmacias" : geo_json_c77e70416fb2980a217d3c4d9ae1a41a,
+                },
+            };
+            let layer_control_8c51cb8ae7af4a8f20348c95eee58f5c = L.control.layers(
+                layer_control_8c51cb8ae7af4a8f20348c95eee58f5c_layers.base_layers,
+                layer_control_8c51cb8ae7af4a8f20348c95eee58f5c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bc52ae1ad56e3fe58cc35952f48d81e2);
+
+        
+</script>
+</html>
